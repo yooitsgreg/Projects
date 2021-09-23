@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+            <script type="text/javascript" src="main.js"></script>
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+            <div id="queryBlock" style="height: auto; width: 100%;">
+                <table border="0" style="width: 100%; height: 100%;">
+                    <tbody>
+                        <tr valign="top">
+                            <td width="50%">
+                                <div class="formBox" id= "archesQuery">
+                                    <div>
+                                        <h3>Arches Query Input</h3>
+                                        <br>
+                                        <p>Description text placeholder</p>
+                                    </div>
+                                    <div id="errorBlock" style="text-align: right; font-size: 16px; color: red;">
+                                        </br>
+                                        <span id="errorText"></span>
+                                    </div>
+                                    <textarea id="archesInput" rows="5">Paste Arches Query from logs</textarea>
+                                    <div>
+                                        <input type="button" value="Test" onclick="test()">
+                                    </div>
+                                </div>
+                            </td>
+                            <td width="50%">
+                                <div class="formBox" id="archesData">
+                                    <div>
+                                        <h3>Arches Data Import</h3>
+                                        </br>
+                                        <p>Upload CSV file from Arches CSV Extension</p>
+                                        </br>
+                                        <div id="importErrorBlock" style="text-align: right; font-size: 16px; color: red;">
+                                            </br>
+                                            <span id="importErrorText"></span>
+                                        </div>
+                                        <form action="">
+                                            <input type="file" id="csvFile" name="filename" accept=".csv">
+                                            <input type="submit">
+                                          </form>
+                                    </br>
+                                    </div>
+                                    </form>
+                                </div>
+                                <!-- 
+                                <div class="formBox" id="jsonPreview">
+                                    <div>
+                                        <h3>JSON Preview</h3>
+                                        </br>
+                                        <p>
+                                            If you are finished completing the tile creation:
+                                        <ul>
+                                            <li>Click the &quot;Export File&quot; button to generate a file with the JSON contents.</li>
+                                            <li>Click the &quot;Copy to Clipboard&quot; button to copy to your clipboard.</li>
+                                        </ul>
+                                        </p>
+                                        </br>
+                                        <div id="jsonPreview">
+                                            <input type=button class="mainbtn" value="Export File" onclick="exportFile()">
+                                            <input type=button class="mainbtn" value="Copy To Clipboard" onclick="copyTiles2clipboard()">
+                                            </br>
+                                            <pre id="jsonPreviewText"></pre>
+                                        </div>
+                                    </br>
+                                    </div>
+                                    </form>
+                                </div> -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </br>
+                </br>
+                </br>
+            </div>
+    
+            <!-- NAVIGATION BAR AND HELP DROP DOWN -->
+            <div class="navbar">
+                <table border="0" cellpadding="10" cellspacing="0" style="width: 100%; height: 70px; text-align: center;">
+                    <tbody>
+                        <tr style="background-color: #354A5F;">
+                            <td style="width: 15%;">
+                                <button class="homebtn" onclick="openHome()">Home</button>
+                            </td>
+                            <td style="width: 70%;">
+                                <h3 style="color:white">SC1 Tools<h3>
+                            </td>
+                            <td style="width: 5%; text-align: right;">
+                            </td>
+                            <td style="width: 10%; text-align: right;">
+                                <button class="homebtn" onclick="openWiki()">Wiki Documentation</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="background-color: #406eb8; height: 15px; width: 100%;">
+                </div>
+            </div>
+    
+            <!-- FOOTER BAR -->
+            <div class="footbar">
+                <table border="0" style="color: #FFFFFF; width: 100%; height: 60px; text-align: center; font-size: 12px;">
+                    <tbody>
+                        <tr style="background-color: #354A5F;">
+                            <td style="background-color: #354A5F; height: 20px; width: 100%;">
+                                <p>Having Issues with this these testing tools?   Email 
+                                    <a target="_blank" href="mailto:christopher.furyk@sap.com">Chris Furyk</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+    </html>
