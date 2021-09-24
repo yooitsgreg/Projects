@@ -3,9 +3,9 @@
         <head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
             <link rel="stylesheet" href="style.css">
-            <script type="text/javascript" src="main.js"></script>
-		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="main.js"></script>
         </head>
         <body>
             <div id="queryBlock" style="height: auto; width: 100%;">
@@ -40,10 +40,10 @@
                                             </br>
                                             <span id="importErrorText"></span>
                                         </div>
-                                        <form action="">
-                                            <input type="file" id="csvFile" name="filename" accept=".csv">
-                                            <input type="submit">
-                                          </form>
+                                        <form>
+                                            <input type="file" id="csv" name="filename" accept=".csv">
+                                            <input type="button" value="Test" onclick="test2()">
+                                        </form>
                                     </br>
                                     </div>
                                     </form>
